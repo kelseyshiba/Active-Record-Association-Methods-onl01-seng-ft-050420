@@ -10,6 +10,7 @@ class Song < ActiveRecord::Base
     if !!self.artist_id && self.artist.name != "Drake"
       drake = Artist.create(name: "Drake")
       self.artist = drake
+    end
   end
   
 end
