@@ -7,7 +7,7 @@ class Song < ActiveRecord::Base
   end
 
   def drake_made_this
-    self.build_artist(drake) if self.artist_id == nil
+    self.build_artist(name: "Drake") if !self.artist_id
       # if Artist.all.include?("Drake") == false
         drake = Artist.create(name: "Drake") 
       # #   self.artist = drake
