@@ -10,7 +10,7 @@ class Song < ActiveRecord::Base
     d = self.build_artist(name: "Drake") if !self.artist_id
     d.save
       # if Artist.all.include?("Drake") == false
-        drake = Artist.create(name: "Drake") 
+        # drake = Artist.create(name: "Drake") 
       # #   self.artist = drake
       # end
   end
