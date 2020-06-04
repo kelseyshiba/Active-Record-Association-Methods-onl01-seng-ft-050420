@@ -8,8 +8,7 @@ class Song < ActiveRecord::Base
 
   def drake_made_this
     if !!self.artist_id && self.artist.name != "Drake"
-      drake = Artist.create(name: "Drake")
-      self.artist = drake
+      self.artist = Artist.create(name: "Drake")
     end
   end
   
